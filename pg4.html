@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="icon" href="star.svg" type="image/x-icon">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="style.css">
+<title>Плоский мир</title>
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial;
+	background-image: url('1.png');
+	color: white;
+    font-size: 25px;
+	font-family: comic sans ms;
+    
+}
+h2{
+	text-shadow: #ffbd36 0 0 20px; /* Свечение голубого цвета */
+    color: #FFFFFF;
+	font-size: 45px;
+}
+
+/* The grid: Four equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 25%;
+    padding: 10px;
+}
+
+/* Style the images inside the grid */
+.column img {
+    opacity: 0.8; 
+    cursor: pointer; 
+}
+
+.column img:hover {
+    opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* The expanding image container */
+.container {
+    position: relative;
+    display: none;
+}
+
+/* Expanding image text */
+#imgtext {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: white;
+    font-size: 20px;
+}
+
+/* Closable button inside the expanded image */
+.closebtn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+</style>
+</head>
+<body>
+
+
+<div class="rectangle_main" >
+<div class="row">
+<div style="text-align:center">
+  <h2>Плоский мир</h2>
+</div>
+  <div class="column">
+    <img src="п1.jpg" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="п2.jpg" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="п3.jpg"  style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="п4.jpg"  style="width:100%" onclick="myFunction(this);">
+  </div>
+</div>
+
+<div class="container">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">×</span>
+  <img id="expandedImg" style="width:100%">
+  <div id="imgtext"></div>
+</div>
+
+<script>
+function myFunction(imgs) {
+    var expandImg = document.getElementById("expandedImg");
+    var imgText = document.getElementById("imgtext");
+    expandImg.src = imgs.src;
+    imgText.innerHTML = imgs.alt;
+    expandImg.parentElement.style.display = "block";
+}
+</script>
+
+
+<div style="text-align:center">
+  
+  <p></p>
+  <p>
+Терри Пратчетт начал с пародирования общепринятого в жанре фэнтези, но постепенно перешёл на всестороннюю критику современного мира. В своём фантастическом, 
+сюрреалистичном мире он с юмором исследует вопросы реального мира. Фэнтези Пратчетта отличается его фирменным остроумием, основанном на интертекстуальности и 
+методах метапрозы. Также в его книгах используется «скрытная философия», то есть философские идеи, тонко скрытые в тексте.
+
+Серия «Плоский мир», которую сам Пратчетт называл «миром и зеркалом миров», значительно изменилась со своих первых книг в 1983 году. Начальные книги действительно
+ содержали немало пародии на фэнтези и были ориентированы на фанатов фэнтези: например, первая книга, «Цвет волшебства», содержит отсылки к героическому дуэту
+ Фафхрда и Серого Мышелова Фрица Лейбера (у Пратчетта — Бравд и Хорёк) и их городу Ланкмару (Анк-Морпорк), к полным щупалец ужасам Говарда Лавкрафта 
+ (бог Бел-Шамгарот), к не вполне реалистичным драконам Энн Маккефри (у Пратчетта они являются магическими проекциями психики и зависят от веры в них). 
+ Однако уже в начальных книгах серии встречаются отсылки к реальному миру: так, вторая книга, «Безумная звезда», весьма характерными описаниями магического
+ загрязнения и трудностей утилизации излучающих магию книг заклинаний намекает на проблему реальных радиоактивных отходов (Пратчетт работал в службе по связям
+ с общественностью британской ядерной индустрии), а восьмая, «Стража! Стража!», в сценах с vox-pop доверчивостью людей отсылает к аналогичной ситуации с НЛО.
+<br>
+
+</p>
+</div>
+<div>
+<a href="index.html" style=" margin: 30px" class="floating-button">Назад</a>
+</div>
+
+
+
+</body>
+</html>

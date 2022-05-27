@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="icon" href="star.svg" type="image/x-icon">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="style.css">
+  <title>Тест</title>
+ <style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 30px;
+    font-family: Arial;
+	background-image: url('1.png');
+	color: white;
+    font-size: 25px;
+	font-family: comic sans ms;
+    text-align:center;
+}
+h2{
+	text-shadow: #ffbd36 0 0 20px; /* Свечение */
+    color: #FFFFFF;
+	font-size: 45px;
+	
+}
+</style>
+</head>
+ 
+<body>
+<h1>Тест</h1>
+<section class="main">
+<form name="quiz" action="javascript:check();" class="quizform">
+
+<div class="quizsection">
+ 
+    <h2>Что такое сеттинг?</h2>
+     
+    <div class="answer">
+        <input name="q1" value="value2" id="value1" type="radio"  /> Устройство фентези мира
+    </div>
+ 
+    <div class="answer">
+        <input name="q1" value="value1" id="value2" type="radio" /> Название фентези мира
+    </div>
+ 
+    <div class="answer">
+        <input name="q1" value="value1" id="value3" type="radio" /> Фантастическое животное
+    </div>
+ 
+</div>
+ 
+<div class="quizsection">
+ 
+    <h2>Кто такие маглы?</h2>
+ 
+    <div class="answer">
+        <input name="q2" value="value1" id="value1" type="radio"  /> Люди имеющие магические способности
+    </div>
+ 
+    <div class="answer">
+        <input name="q2" value="value2" id="value2" type="radio" /> Обычные люди
+    </div>
+ 
+    <div class="answer">
+        <input name="q2" value="value1" id="value3" type="radio" /> Несовершеннолетние волшебники
+    </div>
+</div>
+
+ <div class="quizsection">
+ 
+    <h2>Кто может знать о существовании магов?</h2>
+ 
+    <div class="answer">
+        <input name="q3" value="value1" id="value1" type="radio" /> Никто
+    </div>
+ 
+    <div class="answer">
+        <input name="q3" value="value2" id="value2" type="radio" /> Ближайшие родственники магов
+    </div>
+ 
+    <div class="answer">
+        <input name="q3" value="value1" id="value3" type="radio" /> Собаки породы карликовый пинчер
+    </div>
+</div>
+
+<div class="quizsection">
+ 
+    <h2>С чего начинается первая книга о Гарри Поттере?</h2>
+ 
+    <div class="answer">
+        <input name="q4" value="value1" id="value1" type="radio" /> с его рождения
+    </div>
+ 
+    <div class="answer">
+        <input name="q4" value="value2" id="value2" type="radio" /> с убийства его родителей
+    </div>
+ 
+    <div class="answer">
+        <input name="q4" value="value1" id="value3" type="radio" /> с его поступления в школу
+    </div>
+</div>
+
+<div class="quizsection">
+ 
+    <h2>К какому подвиду научной фантастики относят роман Дюна?</h2>
+ 
+    <div class="answer">
+        <input name="q5" value="value1" id="value1" type="radio"  /> Жесткая фантастика
+    </div>
+ 
+    <div class="answer">
+        <input name="q5" value="value1" id="value2" type="radio" /> Мягкая фантастика
+    </div>
+ 
+    <div class="answer">
+        <input name="q5" value="value2" id="value3" type="radio" /> Смесь жесткой и мягкой фантастики
+    </div>
+</div>
+
+<div class="quizsection">
+ 
+    <h2>В ходе какого события были уничтожены все компьютеры в романе Дюна?</h2>
+ 
+    <div class="answer">
+        <input name="q6" value="value1" id="value1" type="radio"  /> "Батлерский джем"
+    </div>
+ 
+    <div class="answer">
+        <input name="q6" value="value1" id="value2" type="radio" /> "Джихадский батлериан"
+    </div>
+ 
+    <div class="answer">
+        <input name="q6" value="value2" id="value3" type="radio" /> "Батлерианский джихад"
+    </div>
+</div>
+
+<div class="quizsection">
+ 
+    <h2>На какого автора есть отсылки в книге "Цвет волшебства"?</h2>
+ 
+    <div class="answer">
+        <input name="q7" value="value1" id="value1" type="radio"  /> Джоан Роугинг
+    </div>
+ 
+    <div class="answer">
+        <input name="q7" value="value1" id="value2" type="radio" /> Говард Лавкрафт
+    </div>
+ 
+    <div class="answer">
+        <input name="q7" value="value2" id="value3" type="radio" /> Редьярд Киплинг
+    </div>
+</div>
+
+<div class="quizsection">
+ 
+    <h2>Чем отличается творчество Терри Пратчетта?</h2>
+ 
+    <div class="answer">
+        <input name="q8" value="value1" id="value1" type="radio"  /> обилием описаний
+    </div>
+ 
+    <div class="answer">
+        <input name="q8" value="value1" id="value2" type="radio" /> достоверным изложеним фактов
+    </div>
+ 
+    <div class="answer">
+        <input name="q8" value="value2" id="value3" type="radio" /> фирменным остроумием
+    </div>
+</div>
+<div class="quizsection">
+ 
+    <h2>Понравился ли вам данный сайт?</h2>
+ 
+    <div class="answer">
+        <input name="q9" value="value1" id="value1" type="radio"  /> нет
+    </div>
+ 
+    <div class="answer">
+        <input name="q9" value="value1" id="value2" type="radio" /> не очень
+    </div>
+ 
+    <div class="answer">
+        <input name="q9" value="value2" id="value3" type="radio" checked="checked" /> конечно!
+    </div>
+</div>
+ 
+  <input value="Проверить" type="submit" class="floating-button1"/> 
+  <input value="Заново" type="reset" class="floating-button1"/>
+  
+  
+
+ 
+</section>
+ 
+<script type="text/javascript">
+ 
+   var result;
+    
+   function check()
+ 
+   {
+ 
+      var question;
+      var value1;
+      var value2;
+       
+       
+      question = 1;
+      value1 = 0;
+      value2 = 0;
+       
+       
+      result = "";
+ 
+      var choice;
+       
+      for (question = 1; question <= 9; question++) {
+       
+         var q = document.forms['quiz'].elements['q'+question];
+ 
+            for (var i = 0; i < q.length; i++) {
+               if (q[i].checked) {
+                  choice = q[i].value;
+               }
+            }
+ 
+            if (choice == "value1") {
+               value1++;
+            }
+ 
+            if (choice == "value2") {
+               value2++;
+            }
+ 
+ 
+         }
+ 
+      if (value2 == 0) {
+ 
+         
+         result = "ocenka2";
+ 
+      }
+ 
+      else if (value2 == 1 || value2 ==2 || value2 ==3) {
+ 
+         
+         result = "ocenka3";
+ 
+      }
+ 
+      else if (value2 == 4 || value2 ==5 || value2 ==6) {
+ 
+         
+         result = "ocenka4";
+ 
+      }
+ 
+      else if (value2 == 7 || value2 ==8 || value2 ==9) {
+ 
+         
+         result = "ocenka5";
+ 
+      }
+ 
+ 
+      else {
+         result = "404";
+      }
+ 
+      window.location = result + '.html';
+ 
+   }
+ 
+</script>
+ 
+</body>
+</html>

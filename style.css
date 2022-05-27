@@ -1,0 +1,128 @@
+*{ 
+	margin:0;
+	padding:0;
+	top:0;
+	left:0;
+}
+
+.floating-button {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  display: inline-block;
+  width: 140px;
+  height: 45px;
+  line-height: 45px;
+  border-radius: 45px;
+  margin: 30px 900px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 11px;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 3px;
+  font-weight: 600;
+  color: #524f4e;
+  background: white;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, .1);
+  transition: .3s;
+}
+.floating-button:hover {
+	
+  background: #ffbd36;
+  box-shadow: 0 15px 20px rgba(255, 189, 54, .4);
+  color: white;
+  transform: translateY(-7px);
+}
+.floating {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  display: inline-block;
+  width: 200px;
+  height: 45px;
+  line-height: 45px;
+  border-radius: 45px;
+  margin: 30px 870px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 11px;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 3px;
+  font-weight: 600;
+  color: #524f4e;
+  background: white;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, .1);
+  transition: .3s;
+}
+.floating:hover {
+	
+  background: #2EE59D;
+  box-shadow: 0 15px 20px rgba(46, 229, 157, .4);
+  color: white;
+  transform: translateY(-7px);
+}
+
+.rectangle_main{
+
+width: 69%;
+
+height: 2820px;
+
+border:1px solid;
+
+margin:auto;
+
+margin-top:70px;
+
+background: #333;
+
+/*font-style: italic;*/
+
+font-size: 50;
+
+font-weight: bold;
+
+color:#ffff;
+
+padding-left:25px;
+
+padding-right:10px;
+
+border-radius: 20px;  /*Округление графического элемента*/
+
+}
+.center{
+	position:absolute;
+	left:50%;
+	transform:translate(-50%);
+	weight: 250px;
+
+}
+.floating-button1 {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  display: inline-block;
+  width: 140px;
+  height: 45px;
+  line-height: 45px;
+  border-radius: 45px;
+  margin: left;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 11px;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 3px;
+  font-weight: 600;
+  color: #524f4e;
+  background: white;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, .1);
+  transition: .3s;
+}
+.floating-button1:hover {
+	
+  background: #ffbd36;
+  box-shadow: 0 15px 20px rgba(255, 189, 54, .4);
+  color: white;
+  transform: translateY(-7px);
+}

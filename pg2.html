@@ -1,0 +1,143 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="icon" href="star.svg" type="image/x-icon">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="style.css">
+<title>Гарри Поттер</title>
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial;
+	background-image: url('1.png');
+	color: white;
+    font-size: 25px;
+	font-family: comic sans ms;
+    
+}
+h2{
+	text-shadow: #ffbd36 0 0 20px; /* Свечение голубого цвета */
+    color: #FFFFFF;
+	font-size: 45px;
+}
+
+/* The grid: Four equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 25%;
+    padding: 10px;
+}
+
+/* Style the images inside the grid */
+.column img {
+    opacity: 0.8; 
+    cursor: pointer; 
+}
+
+.column img:hover {
+    opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* The expanding image container */
+.container {
+    position: relative;
+    display: none;
+}
+
+/* Expanding image text */
+#imgtext {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: white;
+    font-size: 20px;
+}
+
+/* Closable button inside the expanded image */
+.closebtn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+</style>
+</head>
+<body>
+
+
+<div class="rectangle_main" >
+<div class="row">
+<div style="text-align:center">
+  <h2>Гарри Поттер</h2>
+</div>
+  <div class="column">
+    <img src="ГП.jpg" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="ГП2.jpg" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="ГП3.jpg"  style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="гог.jpg"  style="width:100%" onclick="myFunction(this);">
+  </div>
+</div>
+
+<div class="container">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">×</span>
+  <img id="expandedImg" style="width:50%">
+  <div id="imgtext"></div>
+</div>
+
+<script>
+function myFunction(imgs) {
+    var expandImg = document.getElementById("expandedImg");
+    var imgText = document.getElementById("imgtext");
+    expandImg.src = imgs.src;
+    imgText.innerHTML = imgs.alt;
+    expandImg.parentElement.style.display = "block";
+}
+</script>
+
+
+<div style="text-align:center">
+  
+  <p></p>
+  <p>Действия волшебного мира разворачиваются на Земле, преимущественно в Англии 1990-х годов. Если говорить более точно, то первая книга начинается с убийства родителей Гарри Поттера в 1981 году, а в 1991 году он 
+  поступает на первый курс Хогвартса. Соответственно, основной сюжет серии охватывает период с 1991 по 1998 годы. Эпилог со взрослыми главными героями на вокзале происходит в 2017 году.<br>
+
+В данном сеттинге среди обычных людей скрытно живут волшебники (или маги), обладающие способностью к применению магии и умением пользоваться волшебными палочками и иными волшебными артефактами (посохи, зелья,
+ мантии-невидимки и т. д.).<br>
+
+Обычные люди (волшебники называют их маглами) не знают о существовании волшебников, так как последние тщательно маскируются. Сообщество магов замкнуто и самодостаточно, живёт среди маглов, но не зависит от них и 
+старается не соприкасаться с ним. В 1689 году магами принят Статут о секретности, который неукоснительно соблюдается. Любое намеренное открытие магических способностей наказывается. Запрещено заколдовывать предметы,
+ принадлежащие маглам. Маглы — случайные свидетели совершившихся чудес и превращений подвергаются очистке памяти. Несовершеннолетние волшебники имеют право применять магию только в школе. Маглы, которым разрешено знать
+ о магии, — это супруги и ближайшие родственники волшебников и высшие эшелоны власти (в Англии, скорее всего, только премьер-министр, он информируется о наличии волшебного мира в день своего вступления в должность; про 
+ другие страны в книгах практически не упоминается). Волшебников намного меньше, чем маглов, например, в Англии живёт порядка 3 тысяч волшебников, то есть средняя плотность волшебного населения Англии — около 1 волшебника
+ на 20 тысяч маглов. Если этот показатель стабилен по всему миру, то на конец XX века общая численность волшебников должна была составлять порядка 300 тысяч человек. <br>
+
+</p>
+</div>
+<a href="index.html" style=" margin: 30px" class="floating-button">Назад</a>
+</div>
+
+
+
+</body>
+</html>
